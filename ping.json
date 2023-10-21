@@ -1,0 +1,34 @@
+{
+    "192.168.1.110": {
+        "name": "D-Link_DSL-2600U",
+        "online_flag": 0
+    },
+    "192.168.1.112": {
+        "name": "ryzen3600",
+        "online_flag": 0
+    },
+    "192.168.1.113": {
+        "name": "green_mb",
+        "online_flag": 0
+    },
+    "192.168.1.115": {
+        "name": "green_wifi",
+        "online_flag": 0
+    },
+    "192.168.1.116": {
+        "name": "turbo_mb",
+        "online_flag": 0
+    },
+    "192.168.1.117": {
+        "name": "turbo_wifi",
+        "online_flag": 0
+    },
+    "192.168.1.118": {
+        "name": "red_mb",
+        "online_flag": 0
+    },
+    "192.168.1.119": {
+        "name": "red_wifi",
+        "online_flag": 0
+    }
+}
