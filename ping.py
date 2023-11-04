@@ -30,7 +30,8 @@ class Ping:
                     data[ip]["online_flag"] = 0
                     response = f'❗ Worker {ip} ({data[ip]["name"]}) offline'
                     print(response)
-                    url = f'https://api.telegram.org/bot{self.token}/sendMessage?chat_id={self.chat_id}&text={parse.quote(response)}'
+                    url = (f'https://api.telegram.org/bot{self.token}/sendMessage?chat_id={self.chat_id}&'
+                           f'text={parse.quote(response)}')
                     request.urlopen(url)
                 elif data[ip]["online_flag"] == 0:
                     print(f'{ip} ({data[ip]["name"]}) . . . Offline')
@@ -40,7 +41,8 @@ class Ping:
                     data[ip]["online_flag"] = 1
                     response = f'✅ Worker {ip} ({data[ip]["name"]}) booted'
                     print(response)
-                    url = f'https://api.telegram.org/bot{self.token}/sendMessage?chat_id={self.chat_id}&text={parse.quote(response)}'
+                    url = (f'https://api.telegram.org/bot{self.token}/sendMessage?chat_id={self.chat_id}&'
+                           f'text={parse.quote(response)}')
                     request.urlopen(url)
                 elif data[ip]["online_flag"] == 1:
                     print(f'{ip} ({data[ip]["name"]}) . . . OK')
@@ -54,5 +56,5 @@ class Ping:
 
 
 if __name__ == "__main__":
-    do = Ping()
-    do.start()
+    do_ping = Ping()
+    do_ping.start()
